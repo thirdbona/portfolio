@@ -1,0 +1,81 @@
+.container {
+    max-width: 840px;
+    margin: 0 auto;
+}
+.container > div {
+    margin: 20px auto;
+}
+.profile {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.16);
+    transition: all ease-in-out o.2s;
+}
+.profile:hover {
+    box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
+}
+.intro {
+    text-align: center;
+}
+.i-am, .i-like {
+    text-align: center;
+    text-decoration: none;
+}
+.about-list {
+    list-style: none;
+    padding: 0;    
+}
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background: #caebf2;
+    color: #001f3f
+}
+p {
+    font-style: italic;
+}
+.links-and-contact {
+    justify-self: center;
+}
+.links-list {
+    list-style: none;
+    padding: 0;
+}
+.links {
+    justify-self: center;
+}
+.links-and-contact {
+    display: grid;
+    grid-template-columns: 100% ;
+}
+form input, textarea {
+    padding: 5px;
+    border-radius: 5px;
+    width: 240px;
+}
+form {
+    width: 250px;
+    margin: 0 auto;
+}
+form input[type="submit"] {
+    width: 250px;
+}
+.submit-button-wrapper {
+    margin: 20px 0;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+@media (max-width: 480px) {
+    .about-grid {
+        grid-template-columns: 100%;
+    }
+    
+}
+@media (max-width: 650px) {
+    .links-and-contact {
+        grid-template-columns: 100%;
+    }
+}
